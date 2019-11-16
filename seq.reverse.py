@@ -22,7 +22,7 @@ def MakeOption():
                       help="输入fasta 文件",
                       default=False)
     parser.add_option("-o", "--output", action="store", dest="output",
-                      help="输出互补反向fasta文件",
+                      help="输出反向fasta文件",
                       default=False)
     (options, args) = parser.parse_args()
     # extract option from command line
