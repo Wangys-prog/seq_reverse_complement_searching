@@ -56,6 +56,8 @@ def capture_seq(input,number):
     return aa
 
 def alignmnet_seq(aa,ref,output):
+###########################
+# 将截取到的片段进行搜索
     output_file = open(output, "w")
     for eachline in SeqIO.parse(ref, "fasta"):
         id = eachline.description
