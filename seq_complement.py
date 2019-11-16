@@ -12,7 +12,7 @@ from Bio import SeqIO
 from optparse import OptionParser
 
 """
-输入序列文件（.fasta）得到反向序列文件（.fasta）
+输入序列文件（.fasta）得到互补序列文件（.fasta）
 """
 
 def MakeOption():
@@ -22,7 +22,7 @@ def MakeOption():
                       help="输入fasta 文件",
                       default=False)
     parser.add_option("-o", "--output", action="store", dest="output",
-                      help="输出互补反向fasta文件",
+                      help="输出互补fasta文件",
                       default=False)
     (options, args) = parser.parse_args()
     # extract option from command line
